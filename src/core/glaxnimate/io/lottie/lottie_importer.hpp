@@ -485,6 +485,7 @@ private:
             }
 
             inner_shape = std::move(mask_layer);
+            data.layer = static_cast<model::Layer*>(inner_shape.get());
         }
 
 
